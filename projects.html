@@ -1,0 +1,15 @@
+---
+layout: default
+title: Projects
+permalink: /projects/
+---
+<h1>Projects</h1>
+<p class="count">{{ site.data.projects.size }} projects</p>
+
+{% for p in site.data.projects %}
+<div class="project">
+  <h3>{% if p.link %}<a href="{{ p.link }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}</h3>
+  <p>{{ p.description }}</p>
+  <div class="tags small">{% for t in p.tags %}<span class="tag">{{ t }}</span>{% endfor %}</div>
+</div>
+{% endfor %}

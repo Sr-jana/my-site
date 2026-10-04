@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<article>
+  <h1 class="article-title">{{ page.title }}</h1>
+  <p class="meta">{{ page.date | date: "%Y-%m-%d" }} · {{ content | number_of_words | divided_by: 200 | plus: 1 }} min read</p>
+  {% if page.tags.size > 0 %}
+  <div class="tags">{% for t in page.tags %}<span class="tag">{{ t }}</span>{% endfor %}</div>
+  {% endif %}
+  <div class="post-body">
+    {{ content }}
+  </div>
+</article>

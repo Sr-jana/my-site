@@ -1,0 +1,8 @@
+<header>
+  <a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+  <nav>
+    {% for item in site.nav %}
+    <a href="{{ item.url | relative_url }}"{% if page.url contains item.url %} class="active"{% endif %}>{{ item.title }}</a>
+    {% endfor %}
+  </nav>
+</header>

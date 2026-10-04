@@ -1,0 +1,10 @@
+# Add or edit projects here. Add a "link:" line only if a project has a link.
+- title: Project name one
+  description: One-line description of the business problem and what you built.
+  tags: [SQL, Power BI]
+- title: Project name two
+  description: One-line description of the business problem and what you built.
+  tags: [Python, Tableau]
+- title: Project name three
+  description: One-line description of the business problem and what you built.
+  tags: [Excel, Statistics]

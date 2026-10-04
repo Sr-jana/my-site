@@ -1,0 +1,24 @@
+# Change your details here once; every page picks them up.
+title: Srijana Bhusal
+tagline: "Data Analyst: Data mediator for Businesses"
+description: "Data Analyst: Data mediator for Businesses"
+url: "https://sr-jana.github.io"
+baseurl: ""
+timezone: Australia/Melbourne
+email: srijanabhusal0110@gmail.com
+linkedin: https://www.linkedin.com/in/srijana-bhusal/
+github: https://github.com/sr-jana
+cv_file: /cv.pdf
+recent_posts: 5
+permalink: /writing/:title/
+
+nav:
+  - { title: writing, url: /writing/ }
+  - { title: about, url: /about/ }
+  - { title: cv, url: /cv/ }
+  - { title: projects, url: /projects/ }
+  - { title: contact, url: /contact/ }
+
+defaults:
+  - scope: { path: "", type: posts }
+    values: { layout: post }
